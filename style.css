@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    height: 100vh;
+    background-color: gold;
+    background-color: #f8ef42;
+    background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+}
+.state-conatiner {
+    margin: 20px;
+    border: dotted rgb(58, 3, 58);
+    min-width: 200px;
+    height: 110px;
+    position: relative;
+}
+.state-conatiner h4 {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* this for text no wrapping in two lines */
+    white-space: nowrap;
+}
+.icon {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(34, 4, 34);
+}
+.counter {
+    position: absolute;
+    top: 10px;
+    font-size: 50px;
+    color: green;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* for the screen smoller than 600px */
+@media (max-width:600px) {
+    body {
+        flex-direction: column;
+    }
+}
